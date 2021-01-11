@@ -1,2 +1,3 @@
-# project-euler
-Solutions for projecteuler.net
+# Project Euler
+
+Solutions for [projecteuler.net](https://projecteuler.net/).
