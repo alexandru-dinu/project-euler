@@ -54,14 +54,14 @@ def largest_prime_less_than(n):
     if is_prime(n):
         n -= 2
 
-    primes = [False] * (n+1)
-    primes[2:] = [True] * (n-1)
+    primes = [False] * (n + 1)
+    primes[2:] = [True] * (n - 1)
 
     p = -1
-    for i in range(2, n+1):
+    for i in range(2, n + 1):
         if primes[i]:
             p = i
-            for j in range(i+i, n+1, i):
+            for j in range(i + i, n + 1, i):
                 primes[j] = False
     return p
 
@@ -88,7 +88,7 @@ def solve():
             continue
 
         plt = gen_plt(o)
-        ks = list(map(lambda p: sqrt((o-p)/2), plt))
+        ks = list(map(lambda p: sqrt((o - p) / 2), plt))
         ks = list(map(lambda p: floor(p) != p, ks))
 
         if all(ks):
@@ -98,5 +98,5 @@ def solve():
         o += 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solve()

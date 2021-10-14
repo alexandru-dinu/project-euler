@@ -9,7 +9,7 @@ Sieve = [2] + list(sieve.primerange(1, 1000000))
 i = 2
 prime = {}
 for p in Sieve:
-    while(i < p):
+    while i < p:
         prime[i] = False
         i += 1
 

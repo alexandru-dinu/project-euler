@@ -12,7 +12,7 @@ def digits(n):
 
 
 def next_from(n):
-    return reduce(lambda x, y: x + y*y, digits(n), 0)
+    return reduce(lambda x, y: x + y * y, digits(n), 0)
 
 
 def iterate(f, x):

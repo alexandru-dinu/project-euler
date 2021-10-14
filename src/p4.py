@@ -6,7 +6,7 @@ def factor(n):
     for x in range(1, int(sqrt(n)) + 1):
         if n % x == 0:
             factors.add(x)
-            factors.add(n//x)
+            factors.add(n // x)
     return sorted(factors)
 
 
